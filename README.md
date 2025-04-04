@@ -1,5 +1,5 @@
 # Dragonforge Game (Save/Load) Component
-An Autoload singleton to handle saving and loading of game data
+An Autoload singleton to handle saving and loading of game data.
 # Version 4.4.3
 For use with **Godot 4.4.stable** and later.
 # Installation Instructions
