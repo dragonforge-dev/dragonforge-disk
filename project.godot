@@ -10,16 +10,16 @@ config_version=5
 
 [application]
 
-config/name="Dragonforge Game (Save/Load) v4.4.3"
+config/name="Dragonforge Disk (Save/Load) v0.3"
 config/description="An Autoload singleton to handle saving and loading of game data."
-config/version="4.4.3"
+config/version="0.3"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://dm87nd032qpjk"
 
 [autoload]
 
-Game="*res://addons/dragonforge_game/game.tscn"
+Disk="*res://addons/dragonforge_disk/disk.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dragonforge_game/plugin.cfg")
+enabled=PackedStringArray("res://addons/dragonforge_disk/plugin.cfg")
