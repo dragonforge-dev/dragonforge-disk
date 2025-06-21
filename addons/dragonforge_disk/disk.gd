@@ -5,7 +5,7 @@ const SETTINGS_PATH = "user://configuration.settings"
 const SAVE_GAME_PATH = "user://game.save"
 
 ## If this value is On, save_game() will be called when the player quits the game.
-@export var save_on_quit = false
+@export var save_on_quit: bool = false
 
 var configuration_settings: Dictionary
 var game_information
