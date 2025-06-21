@@ -8,3 +8,6 @@ For use with **Godot 4.4.1-stable** and later.
 3. Select the **plugins** tab.
 4. Check the **On checkbox** under **Enabled** for **Dragonforge Disk (Save/Load) Component**
 5. Press the **Close** button.
+# Usage
+### Export Varaibles
+**save_on_quit: bool = false** If this value is On, save_game() will be called when the player quits the game.
