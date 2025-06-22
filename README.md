@@ -1,6 +1,6 @@
 # Dragonforge Disk (Save/Load)
 An Autoload singleton to handle saving and loading of game data.
-# Version 0.4
+# Version 0.4.1
 For use with **Godot 4.4.1-stable** and later.
 # Installation Instructions
 1. Copy the **dragonforge_disk** folder from the **addons** folder into your project's **addons** folder.
