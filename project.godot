@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Dragonforge Disk (Save/Load) v0.4.2"
-config/description="An Autoload singleton to handle saving and loading of game data."
-config/version="0.4.2"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/name="Dragonforge Disk (Save/Load) v0.5"
+config/description="An Autoload singleton to handle saving and loading of game data and settings."
+config/version="0.5"
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="uid://dm87nd032qpjk"
 
 [autoload]
