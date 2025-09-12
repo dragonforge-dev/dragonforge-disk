@@ -38,7 +38,7 @@ This autoload allows you to access all the features of this plugin. It allows yo
 ### Export Variables
 - `save_on_quit: bool = false` If this value is On/`true`, `save_game()` will be called when the player quits the game. Defaults to off.
 ### Public Functions
-`save_game() -> bool` Returns true if the save was successful, otherwise false. Calls every node added to the Persist Global Group to save data. Works by calling every node in the group and running its `save_node()` function, then storing everything in the save file. If a node is in the group, but didn't implement the `save_node()` function, it is skipped.
-`load_game() -> void` Call this to call the `load_node()` function for every node in the **Persist** Global Group. The save game, if it exists, will be loaded from disk and the values propagated to the game objects.
-`save_setting(data: Variant, category: String) -> void` Stores the passed data under the indicated settings catergory.
-`load_setting(category: String) -> Variant` Returns the stored data for the passed setting category.
+- `save_game() -> bool` Returns true if the save was successful, otherwise false. Calls every node added to the Persist Global Group to save data. Works by calling every node in the group and running its `save_node()` function, then storing everything in the save file. If a node is in the group, but didn't implement the `save_node()` function, it is skipped.
+- `load_game() -> void` Call this to call the `load_node()` function for every node in the **Persist** Global Group. The save game, if it exists, will be loaded from disk and the values propagated to the game objects.
+- `save_setting(data: Variant, category: String) -> void` Stores the passed data under the indicated settings catergory.
+- `load_setting(category: String) -> Variant` Returns the stored data for the passed setting category.
