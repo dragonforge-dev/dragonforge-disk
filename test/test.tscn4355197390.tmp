@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://clio4aax0rnht"]
+
+[ext_resource type="Script" uid="uid://d4afoscns3gxn" path="res://test/test_check_button.gd" id="1_syuel"]
+[ext_resource type="Script" uid="uid://jrwq3ac4u03g" path="res://test/integer_test.gd" id="2_8a8pi"]
+
+[node name="Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "On/Off Check Button:"
+
+[node name="OnOffCheckButton" type="CheckButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+script = ExtResource("1_syuel")
+
+[node name="OnOffLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Off"
+
+[node name="FloatTest" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+script = ExtResource("2_8a8pi")
+
+[node name="Label" type="Label" parent="VBoxContainer/FloatTest"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Float:"
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/FloatTest"]
+layout_mode = 2
+value = 20.0

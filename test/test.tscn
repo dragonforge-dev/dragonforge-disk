@@ -1,0 +1,98 @@
+[gd_scene load_steps=6 format=3 uid="uid://clio4aax0rnht"]
+
+[ext_resource type="Script" uid="uid://d4afoscns3gxn" path="res://test/test_check_button.gd" id="1_syuel"]
+[ext_resource type="Script" uid="uid://jrwq3ac4u03g" path="res://test/integer_test.gd" id="2_8a8pi"]
+[ext_resource type="Script" uid="uid://cfd7hnhbvg2td" path="res://test/float_test.gd" id="3_65205"]
+[ext_resource type="Script" uid="uid://dg50apuj6yitr" path="res://test/check_boxes.gd" id="4_hrq6i"]
+[ext_resource type="Script" uid="uid://bkpc8uajbvca5" path="res://test/string_test.gd" id="5_tbfq4"]
+
+[node name="Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BooleanTest" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/BooleanTest"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Boolean:"
+
+[node name="OnOffCheckButton" type="CheckButton" parent="VBoxContainer/BooleanTest"]
+layout_mode = 2
+script = ExtResource("1_syuel")
+
+[node name="OnOffLabel" type="Label" parent="VBoxContainer/BooleanTest"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Off"
+
+[node name="IntTest" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+script = ExtResource("2_8a8pi")
+
+[node name="Label" type="Label" parent="VBoxContainer/IntTest"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Int:"
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/IntTest"]
+layout_mode = 2
+value = 5.0
+
+[node name="FloatTest" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+script = ExtResource("3_65205")
+
+[node name="Label" type="Label" parent="VBoxContainer/FloatTest"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Float:"
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/FloatTest"]
+layout_mode = 2
+step = 0.1
+value = 20.0
+
+[node name="DictionaryTest" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+script = ExtResource("4_hrq6i")
+
+[node name="Label" type="Label" parent="VBoxContainer/DictionaryTest"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Dictionary:"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+layout_mode = 2
+
+[node name="CheckBox2" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+layout_mode = 2
+
+[node name="CheckBox3" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+layout_mode = 2
+
+[node name="CheckBox4" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+layout_mode = 2
+
+[node name="StringTestHBox" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/StringTestHBox"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "String:"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/StringTestHBox"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+script = ExtResource("5_tbfq4")

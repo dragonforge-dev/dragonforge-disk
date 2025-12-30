@@ -1,7 +1,7 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 # Dragonforge Disk (Save/Load)
 An Autoload singleton to handle saving and loading of game data and settings.
-# Version 0.5
+# Version 0.6
 For use with **Godot 4.5.stable** and later.
 # Installation Instructions
 1. Copy the `dragonforge_disk` folder from the `addons` folder into your project's `addons` folder.
@@ -36,6 +36,8 @@ This autoload allows you to access all the features of this plugin. It allows yo
 - `SETTINGS_PATH` All settings are hardcoded to be stored in `user://configuration.settings`. You can change that by editing this constant.
 - `SAVE_GAME_PATH` The save game file is hardcoded to be stored in `user://game.save`. You can change that by editing this constant.
 ### Export Variables
+- `settings_path: String = DEFAULT_SETTINGS_PATH` The path to save all settings.
+- `save_game_path: String = DEFAULT_SAVE_GAME_PATH` The path to save all game data.
 - `save_on_quit: bool = false` If this value is On/`true`, `save_game()` will be called when the player quits the game. Defaults to off.
 ### Public Functions
 - `save_game() -> bool` Returns true if the save was successful, otherwise false. Calls every node added to the Persist Global Group to save data. Works by calling every node in the group and running its `save_node()` function, then storing everything in the save file. If a node is in the group, but didn't implement the `save_node()` function, it is skipped.

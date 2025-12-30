@@ -10,15 +10,20 @@ config_version=5
 
 [application]
 
-config/name="Dragonforge Disk (Save/Load) v0.5"
+config/name="Dragonforge Disk (Save/Load) v0.6"
 config/description="An Autoload singleton to handle saving and loading of game data and settings."
-config/version="0.5"
+config/version="0.6"
+run/main_scene="uid://clio4aax0rnht"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="uid://dm87nd032qpjk"
 
 [autoload]
 
 Disk="*res://addons/dragonforge_disk/disk.tscn"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
 
 [editor_plugins]
 
