@@ -1,13 +1,16 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+
 # Dragonforge Disk (Save/Load) <img src="/addons/dragonforge_disk/assets/textures/icons/floppy-disk-red.svg" width="32" alt="Disk Icon"/>
 An Autoload singleton to handle saving and loading of game data and settings.
+
 # Version 0.6
 For use with **Godot 4.5.stable** and later.
+
 # Installation Instructions
 1. Copy the `dragonforge_disk` folder from the `addons` folder into your project's `addons` folder.
 2. In your project go to **Project -> Project Settings...**
 3. Select the **Plugins** tab.
-4. Check the **On checkbox** under **Enabled** for **Dragonforge Disk (Save/Load) Component**
+4. Check the **On checkbox** under **Enabled** for **Dragonforge Disk (Save/Load)**
 5. Press the **Close** button.
 
 # Usage Instructions
