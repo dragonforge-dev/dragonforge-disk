@@ -1,4 +1,4 @@
-[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 [![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-disk?logo=mit)](https://github.com/dragonforge-dev/dragonforge-disk/blob/main/LICENSE)
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-disk/latest)](https://github.com/dragonforge-dev/dragonforge-disk/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-disk)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-disk)
@@ -6,8 +6,8 @@
 # Dragonforge Disk (Save/Load) <img src="/addons/dragonforge_disk/assets/textures/icons/floppy-disk-red.svg" width="32" alt="Disk Icon"/>
 An Autoload singleton to handle saving and loading of game data and settings.
 
-# Version 0.6
-For use with **Godot 4.5.stable** and later.
+# Version 0.7
+For use with **Godot 4.6.stable** and later.
 
 # Installation Instructions
 1. Copy the `dragonforge_disk` folder from the `addons` folder into your project's `addons` folder.

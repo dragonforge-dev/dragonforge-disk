@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://clio4aax0rnht"]
+[gd_scene format=3 uid="uid://clio4aax0rnht"]
 
 [ext_resource type="Script" uid="uid://d4afoscns3gxn" path="res://test/test_check_button.gd" id="1_syuel"]
 [ext_resource type="Script" uid="uid://jrwq3ac4u03g" path="res://test/integer_test.gd" id="2_8a8pi"]
@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dg50apuj6yitr" path="res://test/check_boxes.gd" id="4_hrq6i"]
 [ext_resource type="Script" uid="uid://bkpc8uajbvca5" path="res://test/string_test.gd" id="5_tbfq4"]
 
-[node name="Test" type="Control"]
+[node name="Test" type="Control" unique_id=1256159169]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,85 +14,85 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=175196016]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="BooleanTest" type="HBoxContainer" parent="VBoxContainer"]
+[node name="BooleanTest" type="HBoxContainer" parent="VBoxContainer" unique_id=189463646]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/BooleanTest"]
+[node name="Label" type="Label" parent="VBoxContainer/BooleanTest" unique_id=1699553111]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Boolean:"
 
-[node name="OnOffCheckButton" type="CheckButton" parent="VBoxContainer/BooleanTest"]
+[node name="OnOffCheckButton" type="CheckButton" parent="VBoxContainer/BooleanTest" unique_id=742636259]
 layout_mode = 2
 script = ExtResource("1_syuel")
 
-[node name="OnOffLabel" type="Label" parent="VBoxContainer/BooleanTest"]
+[node name="OnOffLabel" type="Label" parent="VBoxContainer/BooleanTest" unique_id=1655540023]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Off"
 
-[node name="IntTest" type="HBoxContainer" parent="VBoxContainer"]
+[node name="IntTest" type="HBoxContainer" parent="VBoxContainer" unique_id=481857492]
 layout_mode = 2
 script = ExtResource("2_8a8pi")
 
-[node name="Label" type="Label" parent="VBoxContainer/IntTest"]
+[node name="Label" type="Label" parent="VBoxContainer/IntTest" unique_id=1195558636]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Int:"
 
-[node name="SpinBox" type="SpinBox" parent="VBoxContainer/IntTest"]
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/IntTest" unique_id=506204633]
 layout_mode = 2
 value = 5.0
 
-[node name="FloatTest" type="HBoxContainer" parent="VBoxContainer"]
+[node name="FloatTest" type="HBoxContainer" parent="VBoxContainer" unique_id=1092804862]
 layout_mode = 2
 script = ExtResource("3_65205")
 
-[node name="Label" type="Label" parent="VBoxContainer/FloatTest"]
+[node name="Label" type="Label" parent="VBoxContainer/FloatTest" unique_id=1778311021]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Float:"
 
-[node name="SpinBox" type="SpinBox" parent="VBoxContainer/FloatTest"]
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/FloatTest" unique_id=1560813412]
 layout_mode = 2
 step = 0.1
 value = 20.0
 
-[node name="DictionaryTest" type="HBoxContainer" parent="VBoxContainer"]
+[node name="DictionaryTest" type="HBoxContainer" parent="VBoxContainer" unique_id=1245961824]
 layout_mode = 2
 script = ExtResource("4_hrq6i")
 
-[node name="Label" type="Label" parent="VBoxContainer/DictionaryTest"]
+[node name="Label" type="Label" parent="VBoxContainer/DictionaryTest" unique_id=494500784]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Dictionary:"
 
-[node name="CheckBox" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=1402981994]
 layout_mode = 2
 
-[node name="CheckBox2" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+[node name="CheckBox2" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=1243720014]
 layout_mode = 2
 
-[node name="CheckBox3" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+[node name="CheckBox3" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=1661895099]
 layout_mode = 2
 
-[node name="CheckBox4" type="CheckBox" parent="VBoxContainer/DictionaryTest"]
+[node name="CheckBox4" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=2137229910]
 layout_mode = 2
 
-[node name="StringTestHBox" type="HBoxContainer" parent="VBoxContainer"]
+[node name="StringTestHBox" type="HBoxContainer" parent="VBoxContainer" unique_id=127190899]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/StringTestHBox"]
+[node name="Label" type="Label" parent="VBoxContainer/StringTestHBox" unique_id=1207043081]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "String:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/StringTestHBox"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/StringTestHBox" unique_id=287046315]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 script = ExtResource("5_tbfq4")
