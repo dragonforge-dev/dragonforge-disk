@@ -5,6 +5,15 @@
 [ext_resource type="Script" uid="uid://cfd7hnhbvg2td" path="res://test/float_test.gd" id="3_65205"]
 [ext_resource type="Script" uid="uid://dg50apuj6yitr" path="res://test/check_boxes.gd" id="4_hrq6i"]
 [ext_resource type="Script" uid="uid://bkpc8uajbvca5" path="res://test/string_test.gd" id="5_tbfq4"]
+[ext_resource type="Script" uid="uid://byn2pqnio8wyq" path="res://test/player.gd" id="6_aeque"]
+[ext_resource type="Texture2D" uid="uid://o2uo3hatho05" path="res://assets/textures/icons/floppy-disk-green-save-game.svg" id="7_f6u32"]
+[ext_resource type="Texture2D" uid="uid://dm87nd032qpjk" path="res://addons/dragonforge_disk/assets/textures/icons/floppy-disk-red.svg" id="8_5jhup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aeque"]
+size = Vector2(75, 75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v2t6q"]
+size = Vector2(188, 188)
 
 [node name="Test" type="Control" unique_id=1256159169]
 layout_mode = 3
@@ -96,3 +105,44 @@ text = "String:"
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 script = ExtResource("5_tbfq4")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=433600820 groups=["Persist"]]
+position = Vector2(508, 296)
+script = ExtResource("6_aeque")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1038111025]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_f6u32")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1300562633]
+shape = SubResource("RectangleShape2D_aeque")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=53675211]
+position = Vector2(502, 446)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1469974336]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("8_5jhup")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1358561487]
+shape = SubResource("RectangleShape2D_v2t6q")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=101228984]
+position = Vector2(690, 403)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=1137110931]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("8_5jhup")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=453526016]
+shape = SubResource("RectangleShape2D_v2t6q")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1571449445]
+position = Vector2(314, 389)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3" unique_id=1643874325]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("8_5jhup")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1162648026]
+shape = SubResource("RectangleShape2D_v2t6q")
