@@ -46,7 +46,9 @@ To save and load a node, you have to add it to the **Persist** group.
 
 1. Select your scene in the **Scene Tree**.
 2. On the right side of the editor, select the **Groups** tab.
+<img src="/assets/textures/docs/groups_tab.png" alt="Groups Tab"/>
 3. Click the + sign.
+<img src="/assets/textures/docs/add_group_dialog.png" alt="Add Group Dialog"/>
 4. Type "Persist" into the box appears. (A capitali "P" is important!)
 5. Check the **Global** checkbox.
 6. Click the **OK** button.
