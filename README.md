@@ -6,7 +6,7 @@
 # Dragonforge Disk (Save/Load) <img src="/addons/dragonforge_disk/assets/textures/icons/floppy-disk-red.svg" width="32" alt="Disk Icon"/>
 An Autoload singleton to handle saving and loading of game data and settings.
 
-# Version 0.8
+# Version 0.8.1
 For use with **Godot 4.6.2.stable** and later.
 
 # Installation Instructions
