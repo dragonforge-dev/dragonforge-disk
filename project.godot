@@ -14,9 +14,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Dragonforge Disk (Save/Load) v0.8.1"
+config/name="Dragonforge Disk (Save/Load) v0.9"
 config/description="An Autoload singleton to handle saving and loading of game data and settings."
-config/version="0.8.1"
+config/version="0.9"
 run/main_scene="uid://clio4aax0rnht"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://dm87nd032qpjk"
