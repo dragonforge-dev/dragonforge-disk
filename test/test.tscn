@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://dg50apuj6yitr" path="res://test/check_boxes.gd" id="4_hrq6i"]
 [ext_resource type="Script" uid="uid://bkpc8uajbvca5" path="res://test/string_test.gd" id="5_tbfq4"]
 [ext_resource type="Script" uid="uid://byn2pqnio8wyq" path="res://test/player.gd" id="6_aeque"]
+[ext_resource type="Script" uid="uid://ccap6rcwrib3j" path="res://test/save_game_button.gd" id="6_f6u32"]
+[ext_resource type="Script" uid="uid://cj4wfjqqtnry4" path="res://test/load_game_button.gd" id="7_5jhup"]
 [ext_resource type="Texture2D" uid="uid://o2uo3hatho05" path="res://assets/textures/icons/floppy-disk-green-save-game.svg" id="7_f6u32"]
 [ext_resource type="Texture2D" uid="uid://dm87nd032qpjk" path="res://addons/dragonforge_disk/assets/textures/icons/floppy-disk-red.svg" id="8_5jhup"]
 
@@ -23,88 +25,104 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=175196016]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=860479496]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="BooleanTest" type="HBoxContainer" parent="VBoxContainer" unique_id=189463646]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=175196016]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/BooleanTest" unique_id=1699553111]
+[node name="BooleanTest" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=189463646]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/BooleanTest" unique_id=1699553111]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Boolean:"
 
-[node name="OnOffCheckButton" type="CheckButton" parent="VBoxContainer/BooleanTest" unique_id=742636259]
+[node name="OnOffCheckButton" type="CheckButton" parent="HBoxContainer/VBoxContainer/BooleanTest" unique_id=742636259]
 layout_mode = 2
 script = ExtResource("1_syuel")
 
-[node name="OnOffLabel" type="Label" parent="VBoxContainer/BooleanTest" unique_id=1655540023]
+[node name="OnOffLabel" type="Label" parent="HBoxContainer/VBoxContainer/BooleanTest" unique_id=1655540023]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Off"
 
-[node name="IntTest" type="HBoxContainer" parent="VBoxContainer" unique_id=481857492]
+[node name="IntTest" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=481857492]
 layout_mode = 2
 script = ExtResource("2_8a8pi")
 
-[node name="Label" type="Label" parent="VBoxContainer/IntTest" unique_id=1195558636]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/IntTest" unique_id=1195558636]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Int:"
 
-[node name="SpinBox" type="SpinBox" parent="VBoxContainer/IntTest" unique_id=506204633]
+[node name="SpinBox" type="SpinBox" parent="HBoxContainer/VBoxContainer/IntTest" unique_id=506204633]
 layout_mode = 2
 value = 5.0
 
-[node name="FloatTest" type="HBoxContainer" parent="VBoxContainer" unique_id=1092804862]
+[node name="FloatTest" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1092804862]
 layout_mode = 2
 script = ExtResource("3_65205")
 
-[node name="Label" type="Label" parent="VBoxContainer/FloatTest" unique_id=1778311021]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/FloatTest" unique_id=1778311021]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Float:"
 
-[node name="SpinBox" type="SpinBox" parent="VBoxContainer/FloatTest" unique_id=1560813412]
+[node name="SpinBox" type="SpinBox" parent="HBoxContainer/VBoxContainer/FloatTest" unique_id=1560813412]
 layout_mode = 2
 step = 0.1
 value = 20.0
 
-[node name="DictionaryTest" type="HBoxContainer" parent="VBoxContainer" unique_id=1245961824]
+[node name="DictionaryTest" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1245961824]
 layout_mode = 2
 script = ExtResource("4_hrq6i")
 
-[node name="Label" type="Label" parent="VBoxContainer/DictionaryTest" unique_id=494500784]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/DictionaryTest" unique_id=494500784]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Dictionary:"
 
-[node name="CheckBox" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=1402981994]
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer/VBoxContainer/DictionaryTest" unique_id=1402981994]
 layout_mode = 2
 
-[node name="CheckBox2" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=1243720014]
+[node name="CheckBox2" type="CheckBox" parent="HBoxContainer/VBoxContainer/DictionaryTest" unique_id=1243720014]
 layout_mode = 2
 
-[node name="CheckBox3" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=1661895099]
+[node name="CheckBox3" type="CheckBox" parent="HBoxContainer/VBoxContainer/DictionaryTest" unique_id=1661895099]
 layout_mode = 2
 
-[node name="CheckBox4" type="CheckBox" parent="VBoxContainer/DictionaryTest" unique_id=2137229910]
+[node name="CheckBox4" type="CheckBox" parent="HBoxContainer/VBoxContainer/DictionaryTest" unique_id=2137229910]
 layout_mode = 2
 
-[node name="StringTestHBox" type="HBoxContainer" parent="VBoxContainer" unique_id=127190899]
+[node name="StringTestHBox" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=127190899]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/StringTestHBox" unique_id=1207043081]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/StringTestHBox" unique_id=1207043081]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "String:"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/StringTestHBox" unique_id=287046315]
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer/VBoxContainer/StringTestHBox" unique_id=287046315]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 script = ExtResource("5_tbfq4")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=237796757]
+layout_mode = 2
+
+[node name="SaveGameButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1691488120]
+layout_mode = 2
+text = "Save Game"
+script = ExtResource("6_f6u32")
+
+[node name="LoadGameButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1250382728]
+layout_mode = 2
+text = "Load Game"
+script = ExtResource("7_5jhup")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=433600820 groups=["Persist"]]
 position = Vector2(508, 296)
